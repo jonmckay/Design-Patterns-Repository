@@ -2,11 +2,11 @@
 
 namespace SimUDuck_Chapter_1
 {
-    class Quack : QuackBehavior
+    public class MuteQuack : QuackBehavior
     {
         public void quack()
         {
-            Console.WriteLine("Quack");
+            Console.WriteLine("<< Silence >>");
         }
     }
 }

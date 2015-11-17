@@ -14,9 +14,19 @@ namespace SimUDuck_Chapter_1
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new Form1());
+
+            Duck mallard = new MallardDuck();
+            mallard.performQuack();
+            mallard.performFly();
+
+
+            Duck model = new ModelDuck();
+            model.performFly();
+            model.setFlyBehavior(new FlyRocketPowered());
+            model.performFly();
         }
     }
 }
